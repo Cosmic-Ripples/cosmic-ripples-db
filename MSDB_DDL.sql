@@ -20,6 +20,7 @@ CREATE TABLE Album (
 
     Title VARCHAR(255) NOT NULL,
     `Year` YEAR,
+    Cover_Path VARCHAR(255) UNIQUE NOT NULL,
     -- TODO: PLAYTIME: derrived or static?
     -- TODO: Artwork Path
 
