@@ -21,8 +21,6 @@ CREATE TABLE Album (
     Title VARCHAR(255) NOT NULL,
     `Year` YEAR,
     Cover_Path VARCHAR(255) UNIQUE NOT NULL,
-    -- TODO: PLAYTIME: derrived or static?
-    -- TODO: Artwork Path
 
     PRIMARY KEY (Artist_ID, ID),
     FOREIGN KEY (Artist_ID) REFERENCES Artist (ID)
