@@ -28,7 +28,7 @@ INSERT INTO Track (Artist_ID, Album_ID, Title, `Length`, `Path`, Track_Number) V
 
 -- Houses of the Holy
 SET @current_artist = (SELECT ID FROM Artist WHERE `Name` = 'Led Zeppelin');
-INSERT INTO Album (Artist_ID, Title, `Year`, Cover_Path) VALUES (@current_artist, 'Houses of the Holy', 1973, 'Led Zeppelin/Houses of the Holy/cover.jpg');
+INSERT INTO Album (Artist_ID, Title, `Year`, Cover_Path) VALUES (@current_artist, 'Houses of the Holy', 1973, 'Led Zeppelin/Houses of the Holy/hoth_censored_cover.jpg');
 SET @current_album = (SELECT ID FROM Album WHERE `Artist_ID` = @current_artist);
 INSERT INTO Track (Artist_ID, Album_ID, Title, `Length`, `Path`, Track_Number) VALUES (@current_artist, @current_album, 'The Song Remains the Same',    '00:05:32', 'Led Zeppelin/Houses of the Holy/01 The Song Remains the Same.flac', 1);
 INSERT INTO Track (Artist_ID, Album_ID, Title, `Length`, `Path`, Track_Number) VALUES (@current_artist, @current_album, 'The Rain Song',                '00:07:39', 'Led Zeppelin/Houses of the Holy/02 The Rain Song.flac', 2);
