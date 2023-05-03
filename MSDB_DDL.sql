@@ -10,6 +10,7 @@ CREATE TABLE Artist (
 
     `Name` VARCHAR(64) UNIQUE NOT NULL,
     Country CHAR(2) CHECK(Country REGEXP BINARY '[A-Z][A-Z]'), -- ISO 3166 country code
+    Image_Path VARCHAR(255) UNIQUE NOT NULL,
 
     PRIMARY KEY (ID)
 ) AUTO_INCREMENT = 800;
